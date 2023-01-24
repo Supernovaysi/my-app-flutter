@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:my_app/src/animation_tutorial.dart';
 import 'package:my_app/src/layout_tutorial.dart';
 
 void main() => runApp(const MyApp());
@@ -30,10 +31,7 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
       TextStyle(fontSize: 30, fontWeight: FontWeight.bold);
   static const List<Widget> _widgetOptions = <Widget>[
     LayoutTutorial(),
-    Text(
-      'Index 1: Business',
-      style: optionStyle,
-    ),
+    LogoApp(),
     Text(
       'Index 2: School',
       style: optionStyle,
