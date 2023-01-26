@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:my_app/src/animation_tutorial.dart';
+import 'package:my_app/src/drag_tutorial.dart';
 import 'package:my_app/src/layout_tutorial.dart';
 
 void main() => runApp(const MyApp());
@@ -32,10 +33,7 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
   static const List<Widget> _widgetOptions = <Widget>[
     LayoutTutorial(),
     LogoApp(),
-    Text(
-      'Index 2: School',
-      style: optionStyle,
-    ),
+    PhysicsCardDragDemo(),
   ];
 
   void _onItemTapped(int index) {
